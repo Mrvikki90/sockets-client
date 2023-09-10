@@ -1,0 +1,33 @@
+.chat-content {
+    overflow-y: auto;
+}
+
+
+  /* Define the scrollbar styles for webkit browsers (Chrome, Safari) */
+.chat-content::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+  }
+  
+  .chat-content::-webkit-scrollbar-thumb {
+    background-color: skyblue; /* Set the color of the thumb */
+    border-radius: 4px; /* Round the edges of the thumb */
+  }
+  
+  /* Define the scrollbar styles for Firefox */
+  .chat-content {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: skyblue transparent; /* Set the color of the thumb and track */
+  }
+  
+  /* Add a smooth transition for the thumb */
+  .chat-content::-webkit-scrollbar-thumb:hover {
+    background-color: royalblue; /* Change the color on hover */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+  }
+  
+  /* Add a smooth transition for the thumb in Firefox */
+  .chat-content:hover {
+    scrollbar-color: royalblue transparent; /* Change the color on hover */
+    transition: scrollbar-color 0.3s; /* Add a smooth transition effect */
+  }
+  
